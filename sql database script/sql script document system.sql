@@ -1,3 +1,6 @@
+CREATE DATABASE IF NOT EXISTS `guccigangdb`;
+USE `guccigangdb`;
+
 drop table if exists revisions;
 drop table if exists sharedDocs;
 drop table if exists interests;
@@ -160,12 +163,6 @@ insert into documents (owner,docName,content,isLocked,restricted,createdDate,tab
 ("Jon","No no Words","Pizza\nfuck\nUNK",0,3,"2011-08-12",1,33),
 ("Jon","No no Words2","fuck\nfuck\nUNK",0,3,"2011-08-12",1,100);
 
-insert into tabooList values
- ('fuck'),
- ('cunt'),
- ('moffo'),
- ('faggot'),
- ('shit');
  insert into sharedDocs (userName, docID)values
  ("Jon", 7),
  ("Ant", 1),
